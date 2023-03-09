@@ -1,8 +1,8 @@
 import { useRef, useState } from "react"
 import Hero from "../components/home/Hero"
 import Works from "../components/home/Works"
-import * as React from "react"
-
+import React from "react"
+import NavBar from "../components/NavBar"
 type propTypes ={
     darkMode:Boolean,
 }
@@ -19,9 +19,10 @@ const Home = ({darkMode}:propTypes) => {
        return ()=> clearTimeout(reset)
     }
   return (
-    <div className="min-h-screen">
+    <div className=" w-full flex flex-col justify-center items-center">
         <Hero setRef={setRef} darkMode={darkMode}/>
-        <Works scrollRequest={scrollRequest} setScrollRequest={setScrollRequest} />
+       
+        {/* <Works scrollRequest={scrollRequest} setScrollRequest={setScrollRequest} /> */}
     </div>
   )
 }

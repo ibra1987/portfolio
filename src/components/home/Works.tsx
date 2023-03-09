@@ -13,12 +13,12 @@ const myRef = useRef<HTMLElement>()
    
  }
   return (
-    <section  className="w-full flex flex-col justify-start items-center my-6" ref={myRef}>
+    <section  className="w-full bg-yellow-300 flex flex-col justify-start items-center my-6" ref={myRef}>
         <h3 className="my-4 text-4xl tracking-widest font-extrabold ">Projects</h3>
         <div className="w-full my-4 grid girdc-cols-4 md:grid-flow-col">
             {filters?.map(skill=>{
 
-                return <span className={"p-3 rounded text-center font-bold bg-yellow-400 mx-1 text-gray-600"} key={skill}>
+                return <span className={"p-3 rounded text-center font-bold  mx-1 text-gray-600"} key={skill}>
                      {skill}
                 </span>
             })}

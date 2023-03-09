@@ -7,10 +7,10 @@ type propTypes ={
 }
 
 const Layout = ({darkMode,setDarkMode}:propTypes) => {
-  const LayoutClass= "flex flex-col justify-between items-center px-8"
+  const LayoutClass= "flex flex-col justify-between items-center  md:mx-6"
 
   return (
-    <div className={darkMode ? LayoutClass + " bg-gray-600 text-gray-100" : LayoutClass + " bg-white text-gray-500 " }>
+    <div className={darkMode ? LayoutClass + " bg-gray-600 text-gray-100" : LayoutClass + " bg-inherit h-screen text-gray-500 " }>
     <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Outlet/>
     </div>
